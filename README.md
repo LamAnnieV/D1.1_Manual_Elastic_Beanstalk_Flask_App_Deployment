@@ -14,8 +14,9 @@
 -           2. Searched for "Error" in the log and it is contained in the "/var/log/web.stdout.log" section
 -           3. Copied "/var/log/web.stdout.log" section to ChatGPT to Explain AWS Log:
 -           4. Per ChatGPT, main issue is:  ModuleNotFoundError: No module named 'application...Make sure the application module is correctly named"
-            5. Renameed the app.py to application.py, rezip content
+            5. Renamed the app.py to *application.py, rezip content
             6. Reload Files and Re-Deployed Applicaition on AWS Elastic Beanstalk
                   2nd Attempt: Health Status:  Ok
--  Step #7:  URL, http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/, successfully Loaded              
+-  Step #7:  URL, http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/, successfully Loaded
+-  *This will cause an issue in the Test Stage of the Jenkins Build.  Test Stage imports an object called app from module app.py, once the module has been renamed from app.py to application.py if the Jenkins Build is reran, the Test stage will fail since the app.py file will no longer be found.  In order to resolve this, the code test_app.py needs to be updated from 'from app import app' to 'from application import app'
             
