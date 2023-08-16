@@ -1,9 +1,7 @@
 <p align="center">
 <img src="https://github.com/kura-labs-org/kuralabs_deployment_1/blob/main/Kuralogo.png">
 </p>
-<h1 align="center">C4_deployment-1.1<h1> 
-
-Demonstrate your ability to run a Jenkins build and manually deploy to Elastic Beanstalk.
+<h1 align="center">Deployment-1.1:  Run a Jenkisn Build and Manually Deploy to Elastic Beanstalk<h1> 
 
 - Step #1 Plan Deployment and Map it out in Draw.io
 - Step #2 Upload Repository to GitHub
