@@ -19,5 +19,3 @@
                   2nd Attempt: Health Status:  Ok
 -  Step #7:  URL, http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/, successfully Loaded              
             
-## Deployment instructions Link:
--  Link to instructions: https://github.com/kura-labs-org/C4_deployment-1.1/blob/main/Deployment-instructions.md
