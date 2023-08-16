@@ -18,5 +18,5 @@
             6. Reload Files and Re-Deployed Applicaition on AWS Elastic Beanstalk
                   2nd Attempt: Health Status:  Ok
 -  Step #7:  URL, http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/, successfully Loaded
--  *This will cause an issue in the Test Stage of the Jenkins Build.  Test Stage imports an object called app from module app.py, once the module has been renamed from app.py to application.py if the Jenkins Build is reran, the Test stage will fail since the app.py file will no longer be found.  In order to resolve this, the code test_app.py needs to be updated from 'from app import app' to 'from application import app'
+-  *This hange should also be made in the repository.  If this change is made in the repository, this will cause an issue in the Test Stage of the Jenkins Build.  Since Test Stage imports an object called app from module app.py and that module app.py can no longer be found. In order to resolve this, the code in test_app.py needs to be updated from 'from app import app' to 'from application import app'.  When there are any changes, we need to keep in mind if that change will affect other areas in the pipeline.
             
