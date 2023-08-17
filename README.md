@@ -38,17 +38,13 @@ Download Repository, Unzip files and re-zip files
 -     Role Name:  Elastic-EC2/Create Role
 
 **Deploy application in AWS EC2 and Elastic Beanstalk**
-AWS/Elastic Beanstalk/Environments/Create Environment/Application Name:/[Platform-4] Platform:  Python/Platform Branch:  Python 3.9 running on 64bit Amazon Linux 2023/Select:  Upload Your code/Version Label:  v#/Select: Local File/Choose File:  {files that was downloaded from GitHub, Unzipped, then rezipped}/Next
 
-[EC2 instance profile] Select:  Elastic-EC2/Next
-
-[Virtual Private Cloud] Select:  default VPC/[Instance Subnets] Select:  us-east-1a/Next
-
-[Instances] Root Volume Type:  General Purpose (SSD)/Size:  10/[Capacity] Instance Types:  Deselect all & Select t2.micro/Next
-
-Next
-
-Submit
+-     AWS/Elastic Beanstalk/Environments/Create Environment/Application Name:/[Platform-4] Platform:  Python/Platform Branch:  Python 3.9 running on 64bit Amazon Linux 2023/Select:  Upload Your code/Version Label:  v#/Select: Local File/Choose File:  {files that was downloaded from GitHub, Unzipped, then rezipped}/Next
+-     [EC2 instance profile] Select:  Elastic-EC2/Next
+-     [Virtual Private Cloud] Select:  default VPC/[Instance Subnets] Select:  us-east-1a/Next
+-     [Instances] Root Volume Type:  General Purpose (SSD)/Size:  10/[Capacity] Instance Types:  Deselect all & Select t2.micro/Next
+-     Next
+-     Submit
 -     1st Attempt: Health Status:  Degraded
 -       Debugging Process:
 -           1. Downloaded 1st 100 lines of the log
