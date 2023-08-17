@@ -1,13 +1,19 @@
 <p align="center">
 <img src="https://github.com/kura-labs-org/kuralabs_deployment_1/blob/main/Kuralogo.png">
 </p>
-<h1 align="center">Deployment-1.1:  Run a Jenkisn Build and Manually Deploy to Elastic Beanstalk<h1> 
+<h1 align="center">Deployment-1.1:  Run a Jenkisn Build and </p> Manually Deploy to Elastic Beanstalk<h1> 
 
-- Step #1 Plan Deployment and Map it out in Draw.io
-- Step #2 Upload Repository to GitHub
-- Step #3 and Step #4:  Use Jenkins to Auto-Build and Auto:Test Application:  Successful
-- Step #5:  Download Repository from GitHub, unzip file and re-zip file
-- Step #6:  Create AWS Roles and Deploy Application on AWS Elastic Beanstalk
+## Step #1 Plan Deployment
+
+![Plan](Deployment_01.1_Pipeline.jpg)
+
+## Step #2 Upload Repository to GitHub
+
+## Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
+
+## Step #5:  Download Repository from GitHub
+
+## Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
 -     1st Attempt: Health Status:  Degraded
 -       Debugging Process:
 -           1. Downloaded 1st 100 lines of the log
