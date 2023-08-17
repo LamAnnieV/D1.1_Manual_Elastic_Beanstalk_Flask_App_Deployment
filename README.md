@@ -24,6 +24,24 @@ Log into Jenkins create a build Annie_L_1.1 for the application from GitHub Repo
 Download Repository, Unzip files and re-zip files
 
 ## Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
+
+**Create EBS Role**
+
+AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Use Cases for other AWS services:  Elastic Beanstalk/Select:  Elastic Beanstalk - Customizable/Next
+
+Next
+
+Role Name:  aws-elasticbeanstalk-service-role/Create Role
+
+**Create EC2 Role**
+
+AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Select:  EC2/Next
+
+[Permissions Policies] Select:   "AWSElasticBeanstalkWebTier" & “AWSElasticBeanstalkWorkerTier”/Next
+
+Role Name:  Elastic-EC2/Create Role
+
+**Deploy application in AWS EC2 and Elastic Beanstalk**
 -     1st Attempt: Health Status:  Degraded
 -       Debugging Process:
 -           1. Downloaded 1st 100 lines of the log
