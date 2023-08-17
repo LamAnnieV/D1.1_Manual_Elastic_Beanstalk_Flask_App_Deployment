@@ -21,6 +21,8 @@ Log into Jenkins create a build Annie_L_1.1 for the application from GitHub Repo
 
 ## Step #5:  Download Repository from GitHub
 
+Download Repository, Unzip files and re-zip files
+
 ## Step #6:  Deploy Application on AWS ELASTIC BEANSTALK
 -     1st Attempt: Health Status:  Degraded
 -       Debugging Process:
