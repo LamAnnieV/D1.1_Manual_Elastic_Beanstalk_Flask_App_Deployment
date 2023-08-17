@@ -58,7 +58,7 @@ Download Repository, Unzip files and re-zip files
 
 ![AWS](D01.1_AWS_Results.jpg)
   
-## Step #7:  Launc Website
+## Step #7:  Launch Website
 
 http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/
 
