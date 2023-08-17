@@ -46,6 +46,7 @@ Download Repository, Unzip files and re-zip files
 -     Next
 -     Submit
 **1st Attempt: Health Status:  Degraded**
+
 **Debugging Process:**
 -           1. Downloaded 1st 100 lines of the log
 -           2. Searched for "Error" in the log and it is contained in the "/var/log/web.stdout.log" section
@@ -63,5 +64,7 @@ http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/
 
 ![Website](D1.01_Website_Result.jpg)
 
--  *This change should also be made in the GitHub repository.  If this change is made in the repository, this will cause an issue in the Test Stage of the Jenkins Build.  Since the Test Stage imports an object called app from module app.py and that module app.py can no longer be found. In order to resolve this, the code in test_app.py needs to be updated from 'from app import app' to 'from application import app'.  When there are any changes, we need to keep in mind if that change will affect other areas in the pipeline.
+## *Note for Step #6 Debugging process #5
+
+-  This change should also be made in the GitHub repository.  If this change is made in the repository, this will cause an issue in the Test Stage of the Jenkins Build.  Since the Test Stage imports an object called app from module app.py and that module app.py can no longer be found. In order to resolve this, the code in test_app.py needs to be updated from 'from app import app' to 'from application import app'.  When there are any changes, we need to keep in mind if that change will affect other areas in the pipeline.
             
