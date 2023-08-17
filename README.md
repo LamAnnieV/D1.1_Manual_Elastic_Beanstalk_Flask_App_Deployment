@@ -45,15 +45,15 @@ Download Repository, Unzip files and re-zip files
 -     [Instances] Root Volume Type:  General Purpose (SSD)/Size:  10/[Capacity] Instance Types:  Deselect all & Select t2.micro/Next
 -     Next
 -     Submit
--     1st Attempt: Health Status:  Degraded
--       Debugging Process:
+**1st Attempt: Health Status:  Degraded**
+**Debugging Process:**
 -           1. Downloaded 1st 100 lines of the log
 -           2. Searched for "Error" in the log and it is contained in the "/var/log/web.stdout.log" section
 -           3. Copied "/var/log/web.stdout.log" section to ChatGPT to Explain AWS Log:
 -           4. Per ChatGPT, main issue is:  ModuleNotFoundError: No module named 'application...Make sure the application module is correctly named"
 -           5. *Renamed the app.py to application.py, rezip content
 -           6. Reload Files and Re-Deployed Application on AWS Elastic Beanstalk
--     2nd Attempt: Health Status:  Ok
+**2nd Attempt: Health Status:  Ok**
 
 ![AWS](D01.1_AWS_Results.jpg)
   
