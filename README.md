@@ -34,7 +34,7 @@ Download Repository, Unzip files and re-zip files
 -           6. Reload Files and Re-Deployed Application on AWS Elastic Beanstalk
 -     2nd Attempt: Health Status:  Ok
 
-            ![AWS](D01.1_AWS_Results.jpg)
+![AWS](D01.1_AWS_Results.jpg)
   
 -  Step #7:  URL, http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/, successfully Loaded
 -  *This change should also be made in the GitHub repository.  If this change is made in the repository, this will cause an issue in the Test Stage of the Jenkins Build.  Since the Test Stage imports an object called app from module app.py and that module app.py can no longer be found. In order to resolve this, the code in test_app.py needs to be updated from 'from app import app' to 'from application import app'.  When there are any changes, we need to keep in mind if that change will affect other areas in the pipeline.
