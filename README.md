@@ -27,21 +27,28 @@ Download Repository, Unzip files and re-zip files
 
 **Create EBS Role**
 
-AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Use Cases for other AWS services:  Elastic Beanstalk/Select:  Elastic Beanstalk - Customizable/Next
-
-Next
-
-Role Name:  aws-elasticbeanstalk-service-role/Create Role
+- AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Use Cases for other AWS services:  Elastic Beanstalk/Select:  Elastic Beanstalk - Customizable/Next
+- Next
+- Role Name:  aws-elasticbeanstalk-service-role/Create Role
 
 **Create EC2 Role**
 
-AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Select:  EC2/Next
-
-[Permissions Policies] Select:   "AWSElasticBeanstalkWebTier" & “AWSElasticBeanstalkWorkerTier”/Next
-
-Role Name:  Elastic-EC2/Create Role
+- AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Select:  EC2/Next
+- [Permissions Policies] Select:   "AWSElasticBeanstalkWebTier" & “AWSElasticBeanstalkWorkerTier”/Next
+- Role Name:  Elastic-EC2/Create Role
 
 **Deploy application in AWS EC2 and Elastic Beanstalk**
+AWS/Elastic Beanstalk/Environments/Create Environment/Application Name:/[Platform-4] Platform:  Python/Platform Branch:  Python 3.9 running on 64bit Amazon Linux 2023/Select:  Upload Your code/Version Label:  v#/Select: Local File/Choose File:  {files that was downloaded from GitHub, Unzipped, then rezipped}/Next
+
+[EC2 instance profile] Select:  Elastic-EC2/Next
+
+[Virtual Private Cloud] Select:  default VPC/[Instance Subnets] Select:  us-east-1a/Next
+
+[Instances] Root Volume Type:  General Purpose (SSD)/Size:  10/[Capacity] Instance Types:  Deselect all & Select t2.micro/Next
+
+Next
+
+Submit
 -     1st Attempt: Health Status:  Degraded
 -       Debugging Process:
 -           1. Downloaded 1st 100 lines of the log
