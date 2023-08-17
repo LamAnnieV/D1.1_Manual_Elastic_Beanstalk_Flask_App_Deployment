@@ -33,6 +33,7 @@ Download Repository, Unzip files and re-zip files
 -           5. *Renamed the app.py to application.py, rezip content
 -           6. Reload Files and Re-Deployed Application on AWS Elastic Beanstalk
 -     2nd Attempt: Health Status:  Ok
+
             ![AWS](D01.1_AWS_Results.jpg)
   
 -  Step #7:  URL, http://url-shortener-env.eba-av38k5ye.us-east-1.elasticbeanstalk.com/, successfully Loaded
