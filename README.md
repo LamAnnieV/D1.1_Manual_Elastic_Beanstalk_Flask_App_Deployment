@@ -44,13 +44,16 @@ How to deploy the application to Elastic Beanstalk, click [here](https://github.
 ![AWS](D01.1_AWS_Results.jpg)
 
 ## Step #8: Debugging
--           1. Downloaded 1st 100 lines of the log
--           2. Searched for "Error" in the log and it is contained in the "/var/log/web.stdout.log" section
--           3. Copied "/var/log/web.stdout.log" section to ChatGPT to Explain AWS Log:
--           4. Per ChatGPT, the main issue is ModuleNotFoundError: No module named 'application...Make sure the application module is correctly named"
--           5. *Renamed the app.py to application.py, rezip content
--           6. Reload Files and Re-Deployed Applications on AWS Elastic Beanstalk
-  
+
+```
+1. Downloaded 1st 100 lines of the log
+2. Searched for "Error" in the log and it is contained in the "/var/log/web.stdout.log" section
+3. Copied "/var/log/web.stdout.log" section to ChatGPT to Explain AWS Log:
+4. Per ChatGPT, the main issue is ModuleNotFoundError: No module named 'application...Make sure the application module is correctly named"
+5. *Renamed the app.py to application.py, rezip content
+6. Reload Files and Re-Deployed Applications on AWS Elastic Beanstalk
+```
+
 **2nd Attempt: Health Status:  OK**
 
 **Notes for Step #8, item #5**
